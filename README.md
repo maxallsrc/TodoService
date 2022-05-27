@@ -15,3 +15,10 @@ https://localhost:44331/swagger/
     "isComplete": true
   }
 ]
+
+use TodoService;
+select * from TodoItems;
+insert into TodoItems(Name, IsComplete) VALUES('Item1', 0);
+insert into TodoItems(Name, IsComplete) VALUES('Item2', 1);
+select * from TodoItems;
+-- delete from TodoItems;
